@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+div{
+    /* border: 1px solid red; */
+}
+.a_page{
+    height: 100vh;
+    width:  100%;
+    color: #4d4847; 
+    /* background: linear-gradient(,#4d4847,white); */
+    /* background: lightgrey; */
+    font-family: Titillium Web;
+    border: none;
+}
+
+.a_main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.a_nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_nav > ul > li{
+    list-style: none;
+}
+.a_nav > ul > li > a{
+    text-decoration: none;
+    color: #4d4847;
+    font-size: 2rem;
+}
+
+.a_about{
+    flex: 3;
+    width: 100%;
+    border-left: 2px solid #a19895;
+    display: flex;
+    flex-direction: column;
+}
+
+.a_nmode,.a_mmode{
+    cursor: pointer;
+}
+
+.a_mmode{
+    display: none;
+}
+
+.a_about > .a_desc{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.a_about > .a_desc > .a_pic{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 80px; 
+    left: -80px;
+}
+
+.a_desc > .a_pic > img{
+    height: 160px;
+    border-radius: 50%;
+}
+
+.a_about > .a_desc > p{
+    text-indent: 1.2rem;
+}
+
+.a_contact{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.a_contact > .a_social{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: end;   
+}
+
+.a_contact > .a_social > .a_socLink{
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0;
+    height: auto;
+    width:  10%;
+    
+}
+
+.a_contact > .a_social > .a_socLink > a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    font-size:  1.4rem;
+    color: #4d4847;
+    margin: 0;
+    padding: 0;
+    transform: rotateZ(90deg);
+    transition: .6s ease-in-out;
+}
+
+
+.a_contact > .a_social > .a_socLink > a:hover{
+    transform: rotateZ(0deg);
+}
