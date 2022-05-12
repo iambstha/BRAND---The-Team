@@ -1,70 +1,128 @@
 <html lang="en">
 <head>
+    <Script src="angel.js"></Script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/479c3918f7.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
     <link rel="stylesheet" href="css/angel.css">
-    <title>Angel</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Source Serif Pro|Roboto|Lato|Josefin Sans|Send Flowers|Inconsolata">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    
+    <link rel="shortcut icon" type="image/png" href="picture/angel.png">
+    <title>Angel Maden</title>
 </head>
 
 <body>
+    <div class="preloader"></div>
+    
     <div class="a_page">
+        <div class="a_animation-area">
+            <ul class="a_box-area">
+                <li class="a_box"></li>
+                <li class="a_box"></li>
+                <li class="a_box"></li>
+                <li class="a_box"></li>
+                <li class="a_box"></li>
+                <li class="a_box"></li>
+            </ul>
+        </div>
         <div class="a_main">
+            <div class="a_modes">
+                <span title="Day Mode" class="a_nmode"><i class="las la-sun"></i></span>
+                <span title="Night Mode" class="a_mmode"><i class="las la-moon"></i></span>
+            </div>
             <div class="a_nav">
                 <ul>
-                    <li><a class="a_link" href="#">about</a></li>
-                    <li><a class="a_link" href="#">blogs</a></li>
-                    <li><a class="a_link" href="#">projects</a></li>
+                    <li><p class="a_link a_hom">HOME</p></li>
+                    <li><p class="a_link a_abt">ABOUT</p></li>
+                    <li><p class="a_link a_prjs">WORKS</p></li>
                 </ul>
             </div>
             
-            <div class="a_about">
+            <div class="a_pic a_hom">
+                <img src="picture/angel.png" alt="Angel Maden">
+            </div>
+            <div class="a_landing">
+                <div class="a_home" id="a__active">
 
-                <div class="a_desc">
-                    <div class="a_pic">
-                        <img src="picture/angel.png" alt="Angel Maden">
+                    <div class="a_desc"> 
+                        <div class="a_myself">
+                            <h1>
+                                Moshi Moshi, I am Angel Maden.
+                            </h1>
+                        </div>
+                        <div class="a_likes">
+                            <p>
+                                I love to 
+                                <div class="a_likesList">
+                                    <span class="a_d"> design</span>
+                                    <span class="a_l"> learn.</span>
+                                    <span class="a_c"> code;</span>
+                                    <span class="a_d"> design</span>
+                                </div>
+                            </p>
+                        </div>
                     </div>
+                    <div class="a_contact">
+                        <div class="a_con">
+                            <div class="a_find"><h2>Find me here</h2></div>
+                            <div class="a_handDown"><i class="las la-hand-point-down a_hnd"></i></div>
+                        </div>
+                        <div class="a_social">
+                            <div class="a_socLink">
+                                <a class="a_link" href="https://www.facebook.com/lange.maden">Facebook</a>
+                            </div>
 
-                    <span class="a_nmode" id="a_active"><i class="fa fa-moon"></i></span>
-                    <span class="a_mmode"><i class="fa fa-sun"></i></span>
-                    
-                    <div class="a_myself">
-                        <h1>
-                            Mosi Mosi, I am Angel Maden.
-                        </h1>
-                    </div>
-                    <p>
-                        A wise man once said, "Angel is a good web developer".
-                    </p>
+                            <div class="a_socLink">
+                                <a class="a_link" href="https://www.instagram.com/nsoul_/">Instagram</a>
+                            </div>
+
+                            <div class="a_socLink">
+                                <a class="a_link" href="https://www.linkedin.com/in/angel-maden-bb4288183/">LinkedIn</a>
+                            </div>
+
+                            <div class="a_socLink">
+                                <a class="a_link" href="https://github.com/Angelo26">Github</a>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
-                <div class="a_contact">
-                    <!-- <div class="a_con">
-                        <h3>
-                            You can find me here!
-                        </h3>
+                <div class="a_projects">
+                    <!-- <div class="a_angelSit">
+                        <img src="picture/angelSit.svg" alt="">
                     </div> -->
-                    <div class="a_social">
-                        <div class="a_socLink">
-                            <a class="a_link" href="#">Facebook</a>
-                        </div>
+                    <div class="a_prjsShowCase">
 
-                        <div class="a_socLink">
-                            <a class="a_link" href="#">Instagram</a>
+                    </div> 
+                </div>
+                <div class="a_about">
+                    <div class="a_intro">
+                        <div class="a_myBio">
+                            <p>
+                            <span><span>Hi,</span></span> I am Angel Maden, a nepalese enthusiast in web designing and developing. I work with code to turn my imaginations into creativity. Coming from a web background, my curiousity and learning attitude discovered that there's still more perspective to explore. And I am always keen to dive deep. 
+                            </p>
                         </div>
-
-                        <div class="a_socLink">
-                            <a class="a_link" href="#">Twitter</a>
+                        <div class="a_features">
+                            <p>
+                                I am familiar with c, c++, html, css(sass), js, php, mysqli.
+                            </p>
                         </div>
-
-                        <div class="a_socLink">
-                            <a class="a_link" href="#">Github</a>
-                        </div>
-                    </div>
-                </div>  
+                    </div> 
+                </div>
             </div>
         </div>  
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://use.fontawesome.com/27e356cb6e.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ff72bdd7d5.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script> -->
     <script src="js/angel.js"></script>
+    
 </body>
 </html>
